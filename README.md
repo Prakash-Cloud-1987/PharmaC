@@ -57,3 +57,57 @@ Before you begin, ensure you have the following:
 ```bash
 git clone https://github.com/<your-username>/<repository-name>.git
 cd <repository-name>
+```
+---
+## Deployment
+
+### 1. Launch an EC2 Instance
+
+```
+aws ec2 run-instances \
+    --image-id ami-0c55b159cbfafe1f0 \  # Ubuntu 20.04 LTS AMI
+    --instance-type t2.micro \
+    --key-name <your-key-pair> \
+    --security-group-ids <security-group-id> \
+    --subnet-id <subnet-id> \
+    --count 1 \
+    --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=WebServer}]'
+```
+### 2. SSH into the Instance
+```
+ssh -i /path/to/<your-key-pair>.pem ubuntu@<public-ip-address>
+```
+### 3. Set up the web server
+```
+bash setup.sh
+
+setup.sh
+sudo apt update
+sudo apt install nginx -y
+sudo systemctl start nginx
+sudo systemctl enable nginx
+
+```
+### 4. Deploy the application
+```
+scp -i /path/to/<your-key-pair>.pem -r ./app/* ubuntu@<public-ip-address>:/var/www/html/
+sudo systemctl restart nginx
+```
+### 5. Test connection
+Once deployed, access your web server via the public IP address or domain name:
+```
+http://<public-ip-address>
+```
+You could also test it from the command line
+```
+curl http://<public-ip-address>/api/example
+```
+---
+
+## Contact
+For questions or feedback, feel free to reach out:
+- GitHub : @prakash-cloud-1987
+- Email : prakashrange1987@gmail.com
+---
+
+
