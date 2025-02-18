@@ -13,10 +13,7 @@ This repository contains the source code and deployment instructions for an **AW
 3. [Prerequisites](#prerequisites)
 4. [Installation](#installation)
 5. [Deployment](#deployment)
-6. [Usage](#usage)
-7. [Troubleshooting](#troubleshooting)
-8. [Contributing](#contributing)
-9. [License](#license)
+6. [Contact](#contact)
 
 ---
 
