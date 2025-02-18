@@ -1,8 +1,8 @@
 # AWS Web Server Project
 
-![AWS](https://img.shields.io/badge/AWS-Cloud-brightgreen) ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![AWS](https://img.shields.io/badge/AWS-Cloud-brightgreen) ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)  ![Synapxe](https://img.shields.io/badge/Synapxe-8A2BE2)
 
-This repository contains the source code and deployment instructions for an **AWS-based web server**. The web server is designed to host a simple application (e.g., a static website, REST API, or dynamic web app) using AWS services such as EC2, S3, and optionally RDS or CloudFront.
+This repository contains the source code and deployment instructions for an **AWS-based web server**. The web server is designed to host a simple application (e.g., a static website, REST API, or dynamic web app) using AWS services such as EC2, S3, and optionally RDS or CloudFront. This Web server will be hosting the PharmaC website for Synapxe.
 
 ---
 
