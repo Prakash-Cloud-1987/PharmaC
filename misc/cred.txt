@@ -1,4 +1,4 @@
 
 Internal:
-User: Administrator
-Pass: P@ssw0rd12345
+User: web_admin
+Pass: meowmeow235
