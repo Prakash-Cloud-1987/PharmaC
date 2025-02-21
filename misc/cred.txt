@@ -1,4 +1,4 @@
 
 Internal:
-User: web_admin
-Pass: meowmeow235
+User: webadmin
+Pass: Loki235!
